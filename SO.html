@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="SO.css">
+    <link rel="shortcut icon" href="../images/fav_icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <!-- Bulma Version 0.7.1-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css" />
+    <link rel="stylesheet" type="text/css" href="../css/hero.css">
+    <link rel="stylesheet" href="https://unpkg.com/bulma-modal-fx/dist/css/modal-fx.min.css" />
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bulma-carousel@3.0.0/dist/js/bulma-carousel.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+  <script src="js/anime.min.js"></script>
+  <script src="js/anime.js"></script>
+   
+    
+ 
+
+<style>html, body {
+  height: 100%;
+}
+body { background-color:#fff}
+svg { position:absolute; top:100; left:0}
+</style>
+ 
+       
+</head>
+<body >
+        <section style="background-color:#122341;" class="hero is-fullheight header-image">
+          
+                <nav style="background-color:#122341;color: white;" class="navbar is-transparent" role="navigation" aria-label="main navigation">
+                        <div class="container" style="color:white;">
+                            <div class="navbar-brand">
+                                <a href="#" class="navbar-item navbar-logo">
+                                    <img alt="Seymur Omarov" src="svg/solologo.svg"><span style="color: white;" class="hello u-right">Seymur Omarov</span>
+                                </a>
+                                <!-- 1245px -->
+                
+                                <div class="navbar-burger">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                            </div>
+                            <div class="navbar-menu">
+                                <div class="navbar-end">
+                                    <a style="color: white;" data-scroll="" href="#home" class="navbar-item">Home</a>
+                                    <a style="color: white;" data-scroll="" href="#about" class="navbar-item">About me</a>
+                                    <a style="color: white;" data-scroll="" href="#projects" class="navbar-item">Projects</a>
+                                    <a style="color: white;" data-scroll="" href="#blogs" class="navbar-item">Blogs</a>
+                                    <a style="color: white;" data-scroll="" href="#contact" class="navbar-item">Contact me</a>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+       
+              
+                <div style="z-index:1;" id="star" class="stars">
+                </div>
+                       
+                       
+               
+             
+
+                <div style="z-index: 20;" class="waves">
+                    <div class="wave"></div>
+                    <div class="wave"></div>
+                </div>
+                
+            
+<section>
+            
+
+      <div class="one">
+        <div class="button-wrap">
+          <div class="button-bg">
+            <div style="margin-left:-1px;z-index: 100;" class="button-out">Projects</div>
+            <div style="margin-left:170px; z-index: 100;" class="button-in">Packages</div>
+            <div class="button-switch"></div>
+          </div>
+        </div>
+      </div>
+      
+     
+      </div>
+      
+</section>
+
+
+
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script>$('.button-wrap').on("click", function(){
+    $(this).toggleClass('button-active');
+  });
+
+  var root = $("#star");
+  var stars = ["star6","star3","star4","star1","star5","star6"];
+  var positions = [300,600,900,1100,1400,1600];
+  var lefts  = [-900,-600,-300,-100,0,300];
+
+  for(var i=0; i<stars.length; i++){
+      root.html(root.html() +'<img id="'+stars[i]+'" style="top:-200px;left:'+positions[i]+'px;position: absolute;  " class=" stars star'+i+'" src="svg/'+stars[i]+'.svg" alt="">');
+      
+  }
+  stars.forEach((star,index) => {
+      var random = Math.floor(Math.random() *5000+1);
+       setTimeout(() => {
+            doAnimation(index);
+       },random)
+  })
+  function doAnimation(index){;
+    $(".star"+index).animate({top:"1000px",left:lefts[index]+"px"},15000);
+    setTimeout(() => {
+        $(".star"+index).css({top:"-200px",left:positions[index]+"px"});
+        doAnimation(index);
+    },16000)
+  }
+  
+   
+
+
+
+    
+    
+</script>
+</html>

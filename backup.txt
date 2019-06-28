@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="SO.css">
+    <link rel="shortcut icon" href="../images/fav_icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <!-- Bulma Version 0.7.1-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css" />
+    <link rel="stylesheet" type="text/css" href="../css/hero.css">
+    <link rel="stylesheet" href="https://unpkg.com/bulma-modal-fx/dist/css/modal-fx.min.css" />
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bulma-carousel@3.0.0/dist/js/bulma-carousel.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+  <script src="js/anime.min.js"></script>
+  <script src="js/anime.js"></script>
+   
+    
+ 
+
+<style>html, body {
+  height: 100%;
+}
+body { background-color:#fff}
+svg { position:absolute; top:100; left:0}
+</style>
+ 
+       
+</head>
+<body >
+        <section style="background-color:#122341;" class="hero is-fullheight header-image">
+          
+                <nav style="background-color:#122341;color: white;" class="navbar is-transparent" role="navigation" aria-label="main navigation">
+                        <div class="container" style="color:white;">
+                            <div class="navbar-brand">
+                                <a href="#" class="navbar-item navbar-logo">
+                                    <img alt="Seymur Omarov" src="svg/solologo.svg"><span style="color: white;" class="hello u-right">Seymur Omarov</span>
+                                </a>
+                                <!-- 1245px -->
+                
+                                <div class="navbar-burger">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                            </div>
+                            <div class="navbar-menu">
+                                <div class="navbar-end">
+                                    <a style="color: white;" data-scroll="" href="#home" class="navbar-item">Home</a>
+                                    <a style="color: white;" data-scroll="" href="#about" class="navbar-item">About me</a>
+                                    <a style="color: white;" data-scroll="" href="#projects" class="navbar-item">Projects</a>
+                                    <a style="color: white;" data-scroll="" href="#blogs" class="navbar-item">Blogs</a>
+                                    <a style="color: white;" data-scroll="" href="#contact" class="navbar-item">Contact me</a>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+       
+              
+                <div style="z-index:1;" id="star" class="stars">
+                        <img id="star1" style="top:-200px;left:300px;position: absolute;  " class="star1" src="svg/star1.svg" alt="">
+                        <img id="star2" style="top:-200px;left:600px;position: absolute;  " class="star2" src="svg/star3.svg" alt="">
+                        <img id="star3" style="top:-200px;left:900px;position: absolute;  " class="star3" src="svg/star4.svg" alt="">
+                        <img id="star4" style="top:-200px;left:1100px;position: absolute;  " class="star4" src="svg/star5.svg" alt="">
+                        <img id="star5" style="top:-200px;left:1600px;position: absolute;  " class="star5" src="svg/star6.svg" alt="">
+                        </div>
+                        <div style="z-index:1;" id="star" class="stars">
+                            <img id="star11" style="top:-200px;left:500px;position: absolute;  " class="star1" src="svg/star1.svg" alt="">
+                            <img id="star22" style="top:-200px;left:800px;position: absolute;  " class="star2" src="svg/star3.svg" alt="">
+                            <img id="star33" style="top:-200px;left:1000px;position: absolute;  " class="star3" src="svg/star4.svg" alt="">
+                            <img id="star44" style="top:-200px;left:1500px;position: absolute;  " class="star4" src="svg/star5.svg" alt="">
+                            <img id="star55" style="top:-200px;left:1900px;position: absolute;  " class="star5" src="svg/star6.svg" alt="">
+                            </div>
+                       
+               
+             
+
+
+         <section style="z-index:1000;" class="wave">
+               
+<svg style="margin-top:200px;" width="100%" height="500px" version="1.1" xmlns="http://www.w3.org/2000/svg" id="intro">
+    <path id="divSvg" d=""></path>
+</svg>
+
+<svg style="margin-top:200px;" width="100%" height="500px" version="1.1" xmlns="http://www.w3.org/2000/svg" id="intro3">
+    <path id="divSvg3" d=""></path>
+</svg>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TweenMax.min.js"></script>
+<script src="js/jquery.waves.js"></script>
+<script>
+$('#divSvg').drawWaves({
+    speed: .15,
+	color: '#212D43'
+});
+
+$('#divSvg3').drawWaves({
+    speed: .45,
+	color: '#161e2b'
+});
+</script>
+            </section>
+            </section>
+
+            
+<section>
+            
+
+      <div class="one">
+        <div class="button-wrap">
+          <div class="button-bg">
+            <div class="button-out">Projects</div>
+            <div style="margin-left:240px;" class="button-in">Packages</div>
+            <div class="button-switch"></div>
+          </div>
+        </div>
+      </div>
+      
+     
+      </div>
+      
+</section>
+
+</body>
+
+
+<script>$('.button-wrap').on("click", function(){
+    $(this).toggleClass('button-active');
+  });
+
+
+
+    anime ({
+        targets:'#star1',
+        translateY: 1300,
+        translateX: -750,
+        duration:30000,
+        loop:true
+    })
+    anime ({
+        targets:'#star2',
+        translateY: 1300,
+        translateX: -750,
+        duration:40000,
+        delay:2000,
+        loop:true
+     })
+    anime ({
+        targets:'#star3',
+        translateY: 1300,
+        translateX: -750,
+        duration:40600,
+        delay:3000,
+        loop:true
+    })
+
+     anime ({
+        targets:'#star4',
+        translateY: 1300,
+        translateX: -750,
+        duration:40600,
+        delay:5000,
+        loop:true
+
+    })
+
+     anime ({
+        targets:'#star5',
+        translateY: 1300,
+        translateX: -750,
+        duration:40600,
+        delay: 1200,
+        loop:true
+
+    })
+
+
+     anime ({
+        targets:'#star11',
+        translateY: 1300,
+        translateX: -750,
+        duration:30000,
+        loop:true
+        delay:41000
+    }) anime ({
+        targets:'#star22',
+        translateY: 1300,
+        translateX: -750,
+        duration:30000,
+        loop:true
+        
+    }) anime ({
+        targets:'#star33',
+        translateY: 1300,
+        translateX: -750,
+        duration:30000,
+        loop:true
+    }) anime ({
+        targets:'#star44',
+        translateY: 1300,
+        translateX: -750,
+        duration:30000,
+        loop:true
+    }) anime ({
+        targets:'#star55',
+        translateY: 1300,
+        translateX: -750,
+        duration:30000,
+        loop:true
+    })
+</script>
+
+</html>
